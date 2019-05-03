@@ -2,7 +2,7 @@ import React from 'react';
 import PostList from '../../shared/PostList/PostList';
 import posts from '../../../data/posts.json';
 
-import './AContent.css';
+import './Content.css';
 
 export default function AContent () {
     return (

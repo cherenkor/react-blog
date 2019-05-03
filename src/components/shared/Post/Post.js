@@ -5,7 +5,7 @@ import { post, postImage } from './Post.module.css';
 
 class Post extends Component {
   render() {
-    const { id, userId, title, body, image } = this.props.post;
+    const { id, userId, title, body } = this.props.post;
     const { index } = this.props;
 
     return (
@@ -13,7 +13,7 @@ class Post extends Component {
             <h2>{title}</h2>
             <h5>Date: 2019-04-0{index}. Created by: {userId}</h5>
             <div className={postImage}>
-                <img src={image} alt=""/>
+                <img src="https://cdn.the-scientist.com/assets/articleNo/30636/iImg/2186/b531a5bf-c7af-43de-9fc1-3560813f9d49-online.jpg" alt=""/>
             </div>
             <div className="post-body">
                 <p>

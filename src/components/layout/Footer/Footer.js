@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './AFooter.css';
+import './Footer.css';
 
 export default function AFooter () {
     return (

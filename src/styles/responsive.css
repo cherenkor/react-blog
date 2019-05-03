@@ -2,4 +2,8 @@
     #content, #sidebar {
         width: 100%;
     }
+    
+    #content {
+        order: 2;
+    }
 }

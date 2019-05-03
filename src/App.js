@@ -1,8 +1,8 @@
 import React from 'react';
-import AHeader from "./components/layout/AHeader/AHeader";
-import AContent from "./components/layout/AContent/AContent";
-import ASidebar from "./components/layout/ASidebar/ASidebar";
-import AFooter from "./components/layout/AFooter/AFooter";
+import Header from "./components/layout/Header/Header";
+import Content from "./components/layout/Content/Content";
+import Sidebar from "./components/layout/Sidebar/Sidebar";
+import Footer from "./components/layout/Footer/Footer";
 
 import './App.css';
 import './styles/responsive.css';
@@ -10,12 +10,12 @@ import './styles/responsive.css';
 function App() {
   return (
     <div>
-      <AHeader />
+      <Header />
       <div className="main">
-        <AContent />
-        <ASidebar />
+        <Content />
+        <Sidebar />
       </div>
-      <AFooter />
+      <Footer />
     </div>
   );
 }
