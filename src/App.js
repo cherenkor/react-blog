@@ -1,8 +1,8 @@
 import React from 'react';
-import AHeader from "./components/sections/AHeader/AHeader";
-import AContent from "./components/sections/AContent/AContent";
-import ASidebar from "./components/sections/ASidebar/ASidebar";
-import AFooter from "./components/sections/AFooter/AFooter";
+import AHeader from "./components/layout/AHeader/AHeader";
+import AContent from "./components/layout/AContent/AContent";
+import ASidebar from "./components/layout/ASidebar/ASidebar";
+import AFooter from "./components/layout/AFooter/AFooter";
 
 import './App.css';
 import './styles/responsive.css';
