@@ -8,14 +8,20 @@
 
 .wrap form input {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     margin-top: 6px;
     margin-bottom: 14px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.wrap form input:focus {
+    border: 2px solid #c3c3c3;
+    outline: none;
 }
 
 .wrap form input[type=submit] {
     background-color: rgb(111, 224, 187);
-    border: none;
     margin: 20px 0 0;
 }
 .wrap form input[type=submit]:hover {
