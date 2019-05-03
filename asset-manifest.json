@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cherenkor/react-blog/static/css/main.c54c4620.chunk.css",
-    "main.js": "/cherenkor/react-blog/static/js/main.47d09464.chunk.js",
-    "main.js.map": "/cherenkor/react-blog/static/js/main.47d09464.chunk.js.map",
+    "main.js": "/cherenkor/react-blog/static/js/main.3c58ab21.chunk.js",
+    "main.js.map": "/cherenkor/react-blog/static/js/main.3c58ab21.chunk.js.map",
     "runtime~main.js": "/cherenkor/react-blog/static/js/runtime~main.0af7d50e.js",
     "runtime~main.js.map": "/cherenkor/react-blog/static/js/runtime~main.0af7d50e.js.map",
-    "static/js/2.77db8355.chunk.js": "/cherenkor/react-blog/static/js/2.77db8355.chunk.js",
-    "static/js/2.77db8355.chunk.js.map": "/cherenkor/react-blog/static/js/2.77db8355.chunk.js.map",
+    "static/js/2.35906c22.chunk.js": "/cherenkor/react-blog/static/js/2.35906c22.chunk.js",
+    "static/js/2.35906c22.chunk.js.map": "/cherenkor/react-blog/static/js/2.35906c22.chunk.js.map",
     "index.html": "/cherenkor/react-blog/index.html",
-    "precache-manifest.9bec49af1b716e2ea650e3c37a1b7bd6.js": "/cherenkor/react-blog/precache-manifest.9bec49af1b716e2ea650e3c37a1b7bd6.js",
+    "precache-manifest.507b25ae51d9ab7957f2fe71e3accf51.js": "/cherenkor/react-blog/precache-manifest.507b25ae51d9ab7957f2fe71e3accf51.js",
     "service-worker.js": "/cherenkor/react-blog/service-worker.js",
     "static/css/main.c54c4620.chunk.css.map": "/cherenkor/react-blog/static/css/main.c54c4620.chunk.css.map"
   }
