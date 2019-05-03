@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cherenkor/react-blog/static/css/main.c54c4620.chunk.css",
-    "main.js": "/cherenkor/react-blog/static/js/main.3c58ab21.chunk.js",
-    "main.js.map": "/cherenkor/react-blog/static/js/main.3c58ab21.chunk.js.map",
-    "runtime~main.js": "/cherenkor/react-blog/static/js/runtime~main.0af7d50e.js",
-    "runtime~main.js.map": "/cherenkor/react-blog/static/js/runtime~main.0af7d50e.js.map",
-    "static/js/2.35906c22.chunk.js": "/cherenkor/react-blog/static/js/2.35906c22.chunk.js",
-    "static/js/2.35906c22.chunk.js.map": "/cherenkor/react-blog/static/js/2.35906c22.chunk.js.map",
-    "index.html": "/cherenkor/react-blog/index.html",
-    "precache-manifest.507b25ae51d9ab7957f2fe71e3accf51.js": "/cherenkor/react-blog/precache-manifest.507b25ae51d9ab7957f2fe71e3accf51.js",
-    "service-worker.js": "/cherenkor/react-blog/service-worker.js",
-    "static/css/main.c54c4620.chunk.css.map": "/cherenkor/react-blog/static/css/main.c54c4620.chunk.css.map"
+    "main.css": "/react-blog/static/css/main.c54c4620.chunk.css",
+    "main.js": "/react-blog/static/js/main.c8a3f398.chunk.js",
+    "main.js.map": "/react-blog/static/js/main.c8a3f398.chunk.js.map",
+    "runtime~main.js": "/react-blog/static/js/runtime~main.a8b04b7f.js",
+    "runtime~main.js.map": "/react-blog/static/js/runtime~main.a8b04b7f.js.map",
+    "static/js/2.35906c22.chunk.js": "/react-blog/static/js/2.35906c22.chunk.js",
+    "static/js/2.35906c22.chunk.js.map": "/react-blog/static/js/2.35906c22.chunk.js.map",
+    "index.html": "/react-blog/index.html",
+    "precache-manifest.e3abbfd961973138f2fb192a1a01208e.js": "/react-blog/precache-manifest.e3abbfd961973138f2fb192a1a01208e.js",
+    "service-worker.js": "/react-blog/service-worker.js",
+    "static/css/main.c54c4620.chunk.css.map": "/react-blog/static/css/main.c54c4620.chunk.css.map"
   }
 }
