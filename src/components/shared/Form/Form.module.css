@@ -11,8 +11,9 @@
     padding: 14px;
     margin-top: 6px;
     margin-bottom: 14px;
-    border: 1px solid transparent;
-    border-radius: 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color .2s, background-color .2s;
 }
 
 .wrap form input:focus {
