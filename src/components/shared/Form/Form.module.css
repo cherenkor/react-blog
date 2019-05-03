@@ -14,7 +14,7 @@
     margin-bottom: 14px;
     border: 1px solid transparent;
     border-radius: 4px;
-    transition: border-color .2s, background-color .2s;
+    transition: all .2s;
 }
 
 .wrap form textarea {
@@ -28,12 +28,14 @@
 }
 
 .wrap form input[type=submit] {
+    text-transform: uppercase;
     background-color: rgb(111, 224, 187);
     margin: 20px 0 0;
 }
 
 .wrap form input[type=submit]:hover {
     background-color: rgb(80, 165, 136);
+    color: #fff;
 }
 
 .error {

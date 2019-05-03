@@ -13,9 +13,8 @@ header h1 {
 .menu ul {
     display: flex;
     justify-content: space-around;
-    margin: 0 3%;
+    margin: 0 3% 3%;
     padding: 0;
-    background-color: slategrey;
 }
 
 .menu ul li, 
@@ -24,13 +23,14 @@ header h1 {
 }
 
 .menu ul li {
+    background-color: slategrey;
     width: 100%;
     text-align: center;
     list-style: none;
 }
 
 .menu ul li:hover {
-    background-color: rgb(111, 150, 189);
+    background-color: #5f6d7a;
     cursor: pointer;
 }
 
