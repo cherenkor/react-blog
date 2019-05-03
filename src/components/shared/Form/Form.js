@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { wrap } from './Form.module.css';
+import { wrap, error } from './Form.module.css';
 
 class Form extends Component {
   constructor (props) {
@@ -25,12 +25,24 @@ class Form extends Component {
 
   addPost (e) {
     e.preventDefault();
+
+    if(this.hasError(this.state)) return;
+
+    this.props.addPost(this.state)
     this.setState({
       userId: 1,
       title: '',
       body: ''
     })
-    this.props.addPost(this.state)
+  }
+
+  hasError(form) {
+    const values = Object.values(form);
+    return values.some(val => !val);
+  }
+
+  errorClass = (input) => {
+    return input ? '' : error;
   }
 
   render() {
@@ -40,11 +52,11 @@ class Form extends Component {
       <div className={wrap}>
         <form onSubmit={this.addPost}>
           <label htmlFor="userId">UserId</label>
-          <input onChange={this.onChange} value={userId} type="number" id="userId" placeholder="userId" />
+          <input onChange={this.onChange} value={userId} className={this.errorClass(userId)} type="number" id="userId" placeholder="userId" />
           <label htmlFor="title">Title</label>
-          <input onChange={this.onChange} value={title} type="text" id="title" placeholder="title" />
+          <input onChange={this.onChange} value={title} className={this.errorClass(title)} type="text" id="title" placeholder="title" />
           <label htmlFor="body">Body</label>
-          <textarea onChange={this.onChange} value={body} type="text" id="body" placeholder="body"></textarea>
+          <textarea onChange={this.onChange} value={body} className={this.errorClass(body)} type="text" id="body" placeholder="body"></textarea>
           <input type="submit" value="Add"/>
         </form>
       </div>

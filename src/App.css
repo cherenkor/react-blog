@@ -10,6 +10,12 @@
   height: max-content;
 }
 
+.block {
+  margin: 3%;
+  padding: 3%;
+  background-color: #fff;
+}
+
 /* Colors */
 .bg-white {
   background-color: #fff;

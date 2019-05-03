@@ -1,42 +1,26 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Home from './components/pages/Home';
+import About from './components/pages/About';
 
 import Header from "./components/layout/Header/Header";
-import Content from "./components/layout/Content/Content";
-import Sidebar from "./components/layout/Sidebar/Sidebar";
 import Footer from "./components/layout/Footer/Footer";
 
 import './App.css';
 import './styles/responsive.css';
 
-import posts from './data/posts.json';
-
 class App extends Component {
-  state = {
-    posts
-  }
-
-  addPost = (data) => {
-    const post = {
-      id: uuid.v4(),
-      ...data
-    };
-    this.setState({
-      posts: [post, ...this.state.posts]
-    })
-  }
-
   render () {
-    const { posts } = this.state;
     return (
-      <div>
-        <Header />
-        <div className="main">
-          <Content posts={posts} />
-          <Sidebar addPost={this.addPost} />
+      <Router>
+        <div>
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
