@@ -4,6 +4,29 @@
     background-color: #fff;
 }
 
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postDeleteBtn {
+    margin: 1em 0 15px 15px;
+    padding-top: 4px;
+    font-size: 22px;
+    color: #474747;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: rgba(255, 0, 0, 0.253);
+    cursor: pointer;
+    outline: none;
+    transition: border-color .2s, transform .2s;
+}
+.postDeleteBtn:hover {
+    border-color: red;
+    transform: rotateZ(90deg);
+    transform-origin: center;
+}
+
 .postImage {
     height: 300px;
     overflow: hidden;

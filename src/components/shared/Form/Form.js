@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { newPost } from '../../../actions/postActions';
 import PropTypes from 'prop-types';
 
 import { wrap, error } from './Form.module.css';
@@ -28,7 +30,7 @@ class Form extends Component {
 
     if(this.hasError(this.state)) return;
 
-    this.props.addPost(this.state)
+    this.props.newPost(this.state);
     this.setState({
       userId: 1,
       title: '',
@@ -65,7 +67,7 @@ class Form extends Component {
 }
 
 Form.propTypes = {
-    addPost: PropTypes.func.isRequired
+    newPost: PropTypes.func.isRequired
 };
 
-export default Form;
+export default connect(null, { newPost })(Form);

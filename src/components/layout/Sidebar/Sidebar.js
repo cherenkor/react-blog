@@ -8,7 +8,7 @@ export default class ASidebar extends Component {
         return (
             <div id="sidebar">
                 <h2 style={{ marginTop: '0' }}>Add Post</h2>
-                <Form addPost={this.props.addPost}></Form>
+                <Form></Form>
             </div>
         )
     }

@@ -1,33 +1,38 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
-import posts from '../../data/posts.json';
+import { connect } from 'react-redux';
+import { fetchPosts } from '../../actions/postActions';
+import PropTypes from 'prop-types';
+
+import { isEmpty } from 'lodash';
 
 import Content from "../layout/Content/Content";
 import Sidebar from "../layout/Sidebar/Sidebar";
 
-export default class Home extends Component {
-    state = {
-        posts
+class Home extends Component {
+
+    componentWillMount () {
+        if (isEmpty(this.props.posts)) this.props.fetchPosts();
     }
 
-    addPost = (data) => {
-        const post = {
-            id: uuid.v4(),
-            ...data
-        };
-        this.setState({
-            posts: [post, ...this.state.posts]
-        })
+    render() {
+        const { posts } = this.props;
+
+        return (
+            <div className="main">
+                <Content posts={posts} />
+                <Sidebar />
+            </div>
+        )
     }
-
-  render() {
-    const { posts } = this.state;
-
-    return (
-        <div className="main">
-            <Content posts={posts} />
-            <Sidebar addPost={this.addPost} />
-        </div>
-    )
-  }
 }
+
+Home.propTypes = {
+    fetchPosts: PropTypes.func.isRequired,
+    posts: PropTypes.array.isRequired
+};
+
+const mapStateToProps = ({ posts }) => ({
+    posts: posts.items
+});
+
+export default connect(mapStateToProps, { fetchPosts })(Home);

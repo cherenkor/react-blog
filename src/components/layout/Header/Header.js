@@ -17,6 +17,9 @@ export default function AHeader () {
                         <li>
                             <NavLink tag="li" to="/about" activeClassName="menu-item-active">About</NavLink>
                         </li>
+                        <li>
+                            <NavLink tag="li" to="/login" activeClassName="menu-item-active">Login</NavLink>
+                        </li>
                     </ul>
                 </div>
         </React.Fragment>
