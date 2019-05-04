@@ -1,4 +1,4 @@
-This is a blog created on React.js with Redux, React Router, Axios, Lodash, JsonPlaceholder.
+This is a React.js SPA with CRUD and responsive design, created with Redux, React Router, Axios, Lodash, JsonPlaceholder.
 
 [Demo](https://cherenkor.github.io/react-blog/)
 
