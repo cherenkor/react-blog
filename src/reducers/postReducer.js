@@ -1,5 +1,5 @@
-import { FETCH_POSTS, NEW_POST, DELETE_POST } from '../actions/types';
-import { filter } from 'lodash';
+import { FETCH_POSTS, NEW_POST, DELETE_POST, EDIT_POST } from '../actions/types';
+import { filter, map } from 'lodash';
 
 const initialState = {
     posts: [],
@@ -23,6 +23,13 @@ export default (state = initialState, { type, payload }) => {
                 ...state,
                 items: filter(state.items, ({ id }) => id !== payload)
             };
+        case EDIT_POST:
+            return {
+                ...state,
+                items: map(state.items, item => {
+                    return item.id === payload.id ? payload : item;
+                })
+            }
         default:
             return state;
     }

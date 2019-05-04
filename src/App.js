@@ -13,6 +13,11 @@ import Footer from "./components/layout/Footer/Footer";
 import './App.css';
 import './styles/responsive.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStroopwafel)
+
 class App extends Component {
   render () {
     return (

@@ -29,13 +29,13 @@
 
 .wrap form input[type=submit] {
     text-transform: uppercase;
-    background-color: rgb(111, 224, 187);
+    background-color: rgb(82, 202, 162);
     margin: 20px 0 0;
     cursor: pointer;
 }
 
 .wrap form input[type=submit]:hover {
-    background-color: rgb(80, 165, 136);
+    background-color: rgb(61, 139, 113);
     color: #fff;
 }
 

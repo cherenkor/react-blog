@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { newPost } from '../../../actions/postActions';
 import PropTypes from 'prop-types';
 
 import { wrap, error } from './Form.module.css';
@@ -9,7 +7,7 @@ class Form extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
+    this.state = props.post || {
       userId: 1,
       title: '',
       body: ''
@@ -30,7 +28,7 @@ class Form extends Component {
 
     if(this.hasError(this.state)) return;
 
-    this.props.newPost(this.state);
+    this.props.onSubmit(this.state);
     this.setState({
       userId: 1,
       title: '',
@@ -49,17 +47,18 @@ class Form extends Component {
 
   render() {
     const { userId, title, body } = this.state;
+    const { buttonName } = this.props;
 
     return (
       <div className={wrap}>
         <form onSubmit={this.addPost}>
           <label htmlFor="userId">UserId</label>
-          <input onChange={this.onChange} value={userId} className={this.errorClass(userId)} type="number" id="userId" placeholder="userId" />
+          <input onChange={this.onChange} value={userId} className={this.errorClass(userId)} type="number" id="userId"  />
           <label htmlFor="title">Title</label>
-          <input onChange={this.onChange} value={title} className={this.errorClass(title)} type="text" id="title" placeholder="title" />
+          <input onChange={this.onChange} value={title} className={this.errorClass(title)} type="text" id="title"  />
           <label htmlFor="body">Body</label>
-          <textarea onChange={this.onChange} value={body} className={this.errorClass(body)} type="text" id="body" placeholder="body"></textarea>
-          <input type="submit" value="Add"/>
+          <textarea onChange={this.onChange} value={body} className={this.errorClass(body)} type="text" id="body" ></textarea>
+          <input type="submit" value={buttonName}/>
         </form>
       </div>
     )
@@ -67,7 +66,9 @@ class Form extends Component {
 }
 
 Form.propTypes = {
-    newPost: PropTypes.func.isRequired
+  post: PropTypes.object,
+  buttonName: PropTypes.string.isRequired,
+  onSubmit: PropTypes.func.isRequired
 };
 
-export default connect(null, { newPost })(Form);
+export default Form;
