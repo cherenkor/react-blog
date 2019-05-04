@@ -1,5 +1,6 @@
 import { FETCH_POSTS, NEW_POST, DELETE_POST } from './types';
 import axios from 'axios';
+import uuid from 'uuid';
 import config from '../config/config';
 
 export const fetchPosts = (limit = 3) => dispatch => {
@@ -21,7 +22,10 @@ export const newPost = newPost => dispatch => {
         .then(({ data }) => 
             dispatch({
                 type: NEW_POST,
-                payload: data
+                payload: {
+                    ...data,
+                    id: uuid.v4()
+                }
             })
         )
         .catch(console.error);

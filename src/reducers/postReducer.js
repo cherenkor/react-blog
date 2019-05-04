@@ -19,7 +19,6 @@ export default (state = initialState, { type, payload }) => {
                 items: [payload, ...state.items]
             };
         case DELETE_POST:
-        console.log(payload);
             return {
                 ...state,
                 items: filter(state.items, ({ id }) => id !== payload)
