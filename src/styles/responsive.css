@@ -6,4 +6,8 @@
     #content {
         order: 2;
     }
+
+    #sidebar {
+        position: relative;
+    }
 }

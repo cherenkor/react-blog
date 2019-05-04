@@ -3,10 +3,10 @@ This is a blog created on React.js with Redux, React Router, Axios, Lodash, Json
 [Demo](https://cherenkor.github.io/react-blog/)
 
 # Mobile
-![alt text](https://raw.githubusercontent.com/cherenkor/react-blog/master/mobile.png)
+![alt text](https://raw.githubusercontent.com/cherenkor/react-blog/master/preview-mobile.png)
 
 # Desktop
-![alt text](https://raw.githubusercontent.com/cherenkor/react-blog/master/desktop.png)
+![alt text](https://raw.githubusercontent.com/cherenkor/react-blog/master/preview-desktop.png)
 
 ## To run
 ### `npm install`
